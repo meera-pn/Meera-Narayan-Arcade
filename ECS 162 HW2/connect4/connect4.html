@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connect 4 Grid</title>
+<link rel="stylesheet" href="connect4.css">
+</head>
+<body>
+    <header>
+        <a href="../main/main.html"><img src="../images/ECS 162 back icon.png" alt="back to main page"></a>
+    </header>
+    <h2 class="text">Connect 4</h2>
+    <div class="board">
+        <!-- creating buttons to pick which column to drop into -->
+        <button onclick="handleColumnClick(0)">Drop Chip!</button>
+        <button onclick="handleColumnClick(1)">Drop Chip!</button>
+        <button onclick="handleColumnClick(2)">Drop Chip!</button>
+        <button onclick="handleColumnClick(3)">Drop Chip!</button>
+        <button onclick="handleColumnClick(4)">Drop Chip!</button>
+        <button onclick="handleColumnClick(5)">Drop Chip!</button>
+        <button onclick="handleColumnClick(6)">Drop Chip!</button>
+        
+        <!-- creating the cells (definitely a more efficient way to do this but it works) -->
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+    </div>
+
+    <div class="bottomDisplay">
+        <div id="resultDisplay">Start by dropping a chip! You are Player Red.</div>
+        <button id="restartButton" onclick="restartGame()">Restart Game</button>
+    </div>
+    
+    <script src="connect4.js"></script>
+</body>
+</html>

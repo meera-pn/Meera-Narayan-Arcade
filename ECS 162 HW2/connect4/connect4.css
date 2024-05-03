@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #daa6e5; /* Optional: Adds a light gray background color */
+}
+
+header {
+    align-items: left;
+    padding: 10px;
+}
+
+.text {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: 50px repeat(6, 40px);
+    gap: 5px;
+    background-color: rgba(54, 113, 201, 0.511);
+    padding: 5px;
+    width: max-content;
+    margin: 20px auto;
+}
+
+.board button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(170, 202, 251);
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultDisplay{
+    font-size: 24px;
+    margin: 20px;
+}
+
+
+.board button:hover {
+    background-color: #eaeaea; /* Hover effect for cells */
+}

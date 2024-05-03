@@ -1,0 +1,27 @@
+.bg {
+    background-image: url('../images/ECS\ 162\ HW2\ background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+}
+
+header {
+    font-size: 50px;
+    padding: 50px;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(72, 47, 171);
+}
+
+.navImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 20px;
+    gap: 70px;
+}
+
+.img:hover {
+    transform: scale(1.05);
+}
